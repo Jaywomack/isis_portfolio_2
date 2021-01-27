@@ -8,12 +8,12 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF"
       crossorigin="anonymous"
-    />
+    ></script>
 
     <!-- Bootstrap CSS -->
     <link
@@ -67,20 +67,20 @@
       </div>
     </nav>
     <!-- Hero section with jumbotron fluid -->
-    <div class="card bg-dark text-white d-flex mb-5">
+    <div class="card bg-dark text-white d-flex mb-5 hero-home ">
       <img
         src="./images/pretty_woman_with_laptop.jpeg"
-        class="card-img vh-50"
+        class="card-img vh-50 flex-grow-1"
         alt="..."
       />
       <div class="card-img-overlay">
-        <h1 class="card-title display-1 text-center mt-5">Isis Avry Womack</h1>
+        <h1 class="card-title display-1 text-center mt-5 ">Isis Avry Womack</h1>
       </div>
     </div>
 
     <!-- Cards container in grid -->
     <div class="cards-grid">
-      <div class="row d-flex justify-content-around my-5">
+      <div class="row d-flex justify-content-around my-5 p-0">
         <div class="card my-5 text-center" style="width: 18rem">
           <img
             src="./images/laptop_with_message.jpeg"
@@ -177,11 +177,11 @@
     </div>
 
     <!-- About me section with picture on left in desktop and tablet -->
-    <div class="media d-flex flex-column flex-md-row py-5">
+    <div class="media d-flex flex-column align-items-center flex-lg-row py-5 text-center">
       <div class="">
         <img
           src="./images/laptop_with_message.jpeg"
-          class="rounded align-self-center mr-3 p-5 d-none d-md-block"
+          class="p-5 d-none d-md-block"
           alt="..."
         />
       </div>
@@ -217,43 +217,43 @@
     </div>
 
     <!-- Contact section with email form -->
-    <div class="row py-5">
-      <form class="w-50pb-5 px-5">
+    <div class="contact row py-5 d-flex justify-content-center">
+      <form class="contact-form w-100 pb-5 px-5"  name='EmailForm'>
         <h2 class="text-center">Contact</h2>
         <div class="form-group py-2">
-          <label for="formGroupExampleInput">First Name</label>
+          <label for="formGroupExampleInput" name='first-name'>First Name</label>
           <input type="text" class="form-control" placeholder="First Name" />
         </div>
         <div class="form-group py-2">
-          <label for="formGroupExampleInput2">Last Name</label>
+          <label for="formGroupExampleInput2" name='last-name'>Last Name</label>
           <input type="text" class="form-control" placeholder="Last Name" />
         </div>
         <div class="form-group py-2">
-          <label for="exampleFormControlTextarea1">Insert Message Here</label>
+          <label for="comment-text-area">Insert Message Here</label>
           <textarea
             class="form-control"
-            id="exampleFormControlTextarea1"
+            id="comment-text-area"
             rows="5"
+            name='comment'
           ></textarea>
         </div>
-        <a href="#" class="btn btn-outline-dark w-100">Submit</a>
+        <input type="submit" href="#" class="btn btn-outline-dark w-100"></input>
       </form>
-      <img
-        src="./images/laptop_with_message.jpeg"
-        alt=""
-        class="d-none d-md-block rounded"
-      />
+      
     </div>
+
     <!-- Footer With Social Media Icons -->
-    <footer class="">
-      <div class="footer-social-icons d-flex justify-content-around">
+    <footer class="bg-dark py-5">
+      <div
+        class="footer-social-icons d-flex flex-wrap justify-content-around mb-5"
+      >
         <a href="#"><i class="fab fa-facebook-square fa-7x"></i></a>
         <a href="#"><i class="fab fa-instagram-square fa-7x"></i></a>
         <a href="#"><i class="fab fa-youtube-square fa-7x"></i></a>
         <a href="#"><i class="fab fa-linkedin fa-7x"></i></a>
       </div>
       <div>
-        <p class="text-center">&copy; Isis Avry Womack 2021</p>
+        <p class="text-center text-light h4">&copy; Isis Avry Womack 2021</p>
       </div>
     </footer>
 

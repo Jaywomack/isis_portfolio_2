@@ -1,1 +1,24 @@
 // _layout.sass — there are the styles for the header, footer, the grid system, etc
+.hero-home{
+  h1 {
+    @media only screen and (max-width:766px){
+      font-size: 36px;
+
+
+    }
+    @media only screen and (min-device-width:767px)and(max-device-width:1023px){
+      font-size: 70px;
+
+
+    }
+  }
+}
+
+.contact{
+
+    img{
+      @media only screen and (min-width:300px)and(max-width:1025){
+        display: none!important;
+      }
+    }
+  }

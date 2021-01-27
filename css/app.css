@@ -1,3 +1,15 @@
 * {
   font-family: 'Helvetica Neue' !important;
   box-sizing: border-box; }
+
+@media only screen and (max-width: 766px) {
+  .hero-home h1 {
+    font-size: 36px; } }
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1023px) {
+  .hero-home h1 {
+    font-size: 70px; } }
+
+@media only screen and (min-width: 300px) and (max-width: 1025) {
+  .contact img {
+    display: none !important; } }
